@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--FONTS-->
+    <string name="font_path">fonts/IRANSansWeb/IRANSansWeb-Black.ttf</string>
+    <!--IconFont-->
+    <!--<string name="font_icon">fonts/Iconfont/icomoon.ttf</string>-->
+    <!--IconFont-->
+    <!--FONTS-->
+</resources>
