@@ -52,6 +52,8 @@ android {
                     [
                             'src/main/res/layouts/others',
                             'src/main/res/layouts/main',
+                            'src/main/res/layouts/camera',
+                            'src/main/res/layouts/gallery',
                             'src/main/res/layouts',
                             'src/main/res'
                     ]
