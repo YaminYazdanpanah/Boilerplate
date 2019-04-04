@@ -79,6 +79,7 @@ dependencies {
     implementation('com.squareup.retrofit2:retrofit:2.3.0')
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
     //Butter Knife
     implementation "com.jakewharton:butterknife:$butterknifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
@@ -87,7 +88,7 @@ dependencies {
     implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
     implementation 'com.muddzdev:styleabletoast:2.1.2'
     implementation 'com.android.support:multidex:1.0.3'
-
+    implementation 'com.orhanobut:logger:2.2.0'
     //Test
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
