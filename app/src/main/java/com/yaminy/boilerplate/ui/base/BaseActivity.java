@@ -52,7 +52,7 @@ public class BaseActivity extends AppCompatActivity implements BaseView {
 
     @Override
     public void showProgress() {
-        if (progressDialog != null && !progressDialog.isShowing())
+        if (progressDialog == null || !progressDialog.isShowing())
             progressDialog = ShowLoading.showLoadingDialog(this);
     }
 
