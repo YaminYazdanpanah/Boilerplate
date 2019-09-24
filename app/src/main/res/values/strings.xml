@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KasraHamrah</string>
+    //font
+    <string name="bhoma_font">fonts/b-homa/B_Homa.ttf</string>
+    <string name="dastnevis_font">fonts/dastnevis/dastnevis.otf</string>
+    <string name="casablanca_font">fonts/casablanca/Casablanca.ttf</string>
+    <string name="casablanca_heavy_font">fonts/casablanca/Casablanca_Heavy.ttf</string>
+    <string name="casablanca_light_font">fonts/casablanca/Casablanca_Light.ttf</string>
+    <string name="iransans_font">fonts/iransanse/IranSansWeb.ttf</string>
+</resources>

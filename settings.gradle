@@ -1,0 +1,2 @@
+include ':app', ':onesignal'
+rootProject.name='KasraHamrah'
