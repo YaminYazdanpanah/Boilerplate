@@ -1,5 +1,6 @@
 package com.kasra.kasrahamrah.ui.base;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,12 +17,14 @@ import com.kasra.kasrahamrah.R;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
+@SuppressLint("Registered")
 public class BaseActivity extends AppCompatActivity implements BaseView {
-//    ProgressDialog progressDialog;
-@Override
-protected void attachBaseContext(Context newBase) {
-    super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-}
+    //    ProgressDialog progressDialog;
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
@@ -85,16 +88,15 @@ protected void attachBaseContext(Context newBase) {
 //        }
 
     }
+
     @Override
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public void changeStatusColor(){
+    public void changeStatusColor() {
         Window window = getWindow();
 // clear FLAG_TRANSLUCENT_STATUS flag:
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
 // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-
 // finally change the color
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimary));
     }
