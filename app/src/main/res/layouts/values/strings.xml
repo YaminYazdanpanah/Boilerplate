@@ -8,7 +8,10 @@
     <string name="casablanca_heavy_font">fonts/casablanca/Casablanca_Heavy.ttf</string>
     <string name="casablanca_light_font">fonts/casablanca/Casablanca_Light.ttf</string>
     <string name="iransans_font">fonts/iransanse/IranSansWeb.ttf</string>
-
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 
 </resources>

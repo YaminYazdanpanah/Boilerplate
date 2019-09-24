@@ -59,6 +59,8 @@ android {
                             'src/main/res/layouts',
                             'src/main/res',
                             'src/main/res/layouts/login',
+                            'src/main/res/layouts/main',
+                            'src/main/res/layouts/main/layout/home',
                             'src/main/res/layouts/other',
 
 
@@ -91,6 +93,7 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     //Butter Knife
     implementation 'com.jakewharton:butterknife:10.1.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
     //Google Play Services
     implementation "com.google.android.gms:play-services-location:17.0.0"
