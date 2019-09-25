@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">KasraHamrah</string>
     //font
+    <string name="font_path">fonts/b-homa/B_Homa.ttf</string>
     <string name="bhoma_font">fonts/b-homa/B_Homa.ttf</string>
     <string name="dastnevis_font">fonts/dastnevis/dastnevis.otf</string>
     <string name="casablanca_font">fonts/casablanca/Casablanca.ttf</string>

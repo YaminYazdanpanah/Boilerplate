@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.kasra.kasrahamrah.R;
+import com.kasra.kasrahamrah.util.MyProgressDialog;
 import com.kasra.kasrahamrah.util.SetLanguage;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
@@ -20,7 +21,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 public class BaseFragment extends Fragment {
 
     Context context;
-//    ProgressDialog progressDialog;
+    MyProgressDialog progressBar;
 
 
     @Override
@@ -68,35 +69,38 @@ public class BaseFragment extends Fragment {
         }
     }
 
+
     public void showProgress() {
-
-
-//        if (progressDialog == null || !progressDialog.isShowing())
-//            progressDialog = ShowLoading.showLoadingDialog(context);
-
+        if (progressBar == null || !progressBar.isShowing()) {
+            progressBar = new MyProgressDialog(context);
+            progressBar.show();
+        }
     }
 
     public void hideProgress() {
-
-//        if (progressDialog != null)
-//            if (progressDialog.isShowing())
-//                progressDialog.dismiss();
-
+        if (progressBar != null)
+            if (progressBar.isShowing())
+                progressBar.dismiss();
     }
 
-    public Typeface getIranSansTypeFace(){
+
+    public Typeface getIranSansTypeFace() {
         return Typeface.createFromAsset(context.getAssets(), context.getResources().getString(R.string.iransans_font));
     }
-    public Typeface getCasablancaTypeFace(){
+
+    public Typeface getCasablancaTypeFace() {
         return Typeface.createFromAsset(context.getAssets(), context.getResources().getString(R.string.casablanca_font));
     }
-    public Typeface getBHomaTypeFace(){
+
+    public Typeface getBHomaTypeFace() {
         return Typeface.createFromAsset(context.getAssets(), context.getResources().getString(R.string.bhoma_font));
     }
-    public Typeface getCasablancaHeavyTypeFace(){
+
+    public Typeface getCasablancaHeavyTypeFace() {
         return Typeface.createFromAsset(context.getAssets(), context.getResources().getString(R.string.casablanca_heavy_font));
     }
-    public Typeface getCasablancaLightTypeFace(){
+
+    public Typeface getCasablancaLightTypeFace() {
         return Typeface.createFromAsset(context.getAssets(), context.getResources().getString(R.string.casablanca_light_font));
     }
 

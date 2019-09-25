@@ -84,6 +84,7 @@ ext {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //Android Design Supports
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
@@ -91,6 +92,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
     implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
     //Butter Knife
     implementation 'com.jakewharton:butterknife:10.1.0'
     implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
@@ -117,17 +120,13 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
-    //drawer
-    implementation 'com.infideap.drawerbehavior:drawer-behavior:0.2.2'
-
-
     //other
     implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
     testImplementation 'junit:junit:4.12'
     implementation 'com.muddzdev:styleabletoast:2.1.2'
-    implementation 'com.github.ome450901:SimpleRatingBar:1.4.3'
+    implementation 'com.orhanobut:logger:2.2.0'
     implementation project(':onesignal')
-    implementation 'com.mohamadamin:persianmaterialdatetimepicker:1.2.1'
+//    implementation 'com.mohamadamin:persianmaterialdatetimepicker:1.2.1'
     implementation "com.google.android.material:material:1.1.0-alpha10"
 //    androidTestImplementation 'androidx.half_circle_slide_theme:runner:1.2.0'
 //    androidTestImplementation 'androidx.half_circle_slide_theme.espresso:espresso-core:3.2.0'
