@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_month">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.kasra.kasrahamrah.ui.main.fragments.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_month"
+        android:name="com.kasra.hamrah.ui.main.fragments.month.MonthFragment"
+        android:label="@string/title_month"
+        tools:layout="@layout/fragment_month" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.kasra.kasrahamrah.ui.main.fragments.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_cartable"
+        android:name="com.kasra.hamrah.ui.main.fragments.cartable.CartableFragment"
+        android:label="@string/title_cartable"
+        tools:layout="@layout/fragment_cartable" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.kasra.kasrahamrah.ui.main.fragments.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_profile"
+        android:name="com.kasra.hamrah.ui.main.fragments.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

@@ -9,10 +9,8 @@
     <string name="casablanca_heavy_font">fonts/casablanca/Casablanca_Heavy.ttf</string>
     <string name="casablanca_light_font">fonts/casablanca/Casablanca_Light.ttf</string>
     <string name="iransans_font">fonts/iransanse/IranSansWeb.ttf</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_month">Month</string>
-    <string name="title_cartable">Cartable</string>
-    <string name="title_profile">Profile</string>
 
-
+    <string name="title_month">کرکرد ماهانه</string>
+    <string name="title_cartable">کارتابل</string>
+    <string name="title_profile">پروفایل</string>
 </resources>

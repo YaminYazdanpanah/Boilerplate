@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.kasra.kasrahamrah"
+        applicationId "com.kasra.hamrah"
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
@@ -59,8 +59,10 @@ android {
                             'src/main/res/layouts',
                             'src/main/res',
                             'src/main/res/layouts/login',
+                            'src/main/res/layouts/main/month',
+                            'src/main/res/layouts/main/profile',
+                            'src/main/res/layouts/main/cartable',
                             'src/main/res/layouts/main',
-                            'src/main/res/layouts/main/layout/home',
                             'src/main/res/layouts/other',
 
 
