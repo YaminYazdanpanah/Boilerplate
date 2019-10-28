@@ -13,7 +13,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 public class App extends Application {
 
-    public static Context context;
+    private static Context context ;
 
     @Override
     protected void attachBaseContext(Context base) {
@@ -24,9 +24,18 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        context = getBaseContext();
         addCalligraphy();
+        setContext(getBaseContext());
         initialLogger();
+    }
+
+    public static void setContext(Context context) {
+        App.context = context;
+
+    }
+
+    public static Context getContext() {
+        return context;
     }
 
     private void initialLogger() {

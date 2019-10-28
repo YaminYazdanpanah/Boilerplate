@@ -16,7 +16,7 @@ import java.util.Random;
 
 public class MyNotificationManagers {
 
-    public static String channelId;
+    static String channelId = "1";
     private static final int GLOBAL_NOTIFICATION_ID = 920;
 
     /**
@@ -54,8 +54,7 @@ public class MyNotificationManagers {
             notificationManager.createNotificationChannel(notificationChannel);
         }
 
-        final Random rand = new Random();
-        int diceRoll = rand.nextInt(1000) + 1;
+        int diceRoll = new Random().nextInt(1000) + 1;
         if (notificationManager != null)
             notificationManager.notify(diceRoll, notification.build());
     }

@@ -13,7 +13,7 @@ public class AppPreferences implements AppPreferencesHelper {
 
     public static AppPreferences getInstance(Context context) {
         if (context == null) {
-            context = App.context;
+            context = App.getContext();
         }
         if (appPreferences == null) {
             appPreferences = new AppPreferences(context);
@@ -23,7 +23,7 @@ public class AppPreferences implements AppPreferencesHelper {
 
     public AppPreferences(Context context) {
         if (context == null) {
-            context = App.context;
+            context = App.getContext();
         }
         preferences = context.getSharedPreferences(context.getResources().getString(R.string.app_name) + "prefs", Context.MODE_PRIVATE);
         this.context = context;

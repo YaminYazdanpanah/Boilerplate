@@ -10,7 +10,6 @@ public class AppDataManager implements AppDataManagerHelper {
 
     private AppPreferences appPreferences;
     private static AppDataManager appDataManager;
-    private final ApiHeader apiHeader;
 
     public static AppDataManager getInstance(Context context) {
         if (appDataManager == null) {
@@ -21,12 +20,10 @@ public class AppDataManager implements AppDataManagerHelper {
 
     public AppDataManager(AppPreferences appPreferences, ApiHeader apiHeader) {
         this.appPreferences = appPreferences;
-        this.apiHeader = apiHeader;
     }
 
     public AppDataManager(Context context) {
         this.appPreferences = AppPreferences.getInstance(context);
-        this.apiHeader = null;
     }
     //<<<<<<<<< API CALLS ARE HERE >>>>>>>>
 //    @Override
